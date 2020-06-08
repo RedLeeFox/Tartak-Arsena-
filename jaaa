@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="spicer2"></div>
+    <div class="kontener">
+      
+        <img src="logotry.png" alt="logo" class="logo">
+
+        <nav>
+            <ul class="lista">
+                <li><a href="main.html">główna</a></li>
+				<li><a href="galeria.html">galeria</a></li>
+                <li><a href="O nas.html">o nas</a></li>
+                <li><a href="Kontakt.html">kontakt</a></li>
+            </ul>
+        </nav>
+       
+    </div>
+    
+
+    <div class="wrapper">
+        <a href="Domy.html" class="single-portfolio" style="background-image: url(images/2.jpeg);" data-title="Domy z Bala" data-text="+48 607 939 814 Celestyny 16, 62-709 Malanów"></a>
+        <a href="sklad.html" class="single-portfolio" style="background-image: url(images/6.jpg);" data-title="Skład Drewna" data-text="sklad"></a>
+        <a href="tartak.html" class="single-portfolio" style="background-image: url(images/8.jpg);" data-title="Tartak" data-text="tartak"></a>
+    </div>
+      
+
+    <div class="spicer"> </div>
+
+    
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        // Styles a map in night mode.
+        var celestyny = {lat: 51.921370, lng: 18.345280};
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: celestyny,
+          zoom: 12,
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+        }
+        );
+        var marker = new google.maps.Marker({
+    position: celestyny,
+    map: map,
+    title: 'Tartak Celestyny'
+  });
+      }
+      
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-WfCsl1TylLLsWMLN3dqP8fDza867YLE&callback=initMap"
+    async defer></script> 
+
+<!-- <iframe src="https://www.google.com/maps/d/embed?mid=1DK4bqwHQRFBLFtk_qNDRxtUWqXj14z6L&hl=pl"
+  width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+ 
+
+
+    <footer>
+         <div class="footer1">
+            <img class="foto1" src="las.jpg" alt="drewno se w lesie leży lol">
+            <a href="Kontakt.html"><div class=" footertext3">  <ion-icon class="ion4" name="mail-outline"></ion-icon> Skontaktuj się z Nami!</div></a>
+           
+            <div class="footertext1"><ion-icon class="loc" name="location-outline"></ion-icon>Celestyny 16, 62-709 Malanów</div>
+            
+            <div class="footertext2"><ion-icon class="phone" name="call-outline"></ion-icon>+48 607 939 814</div>
+            
+            <div class="footertext4"><ion-icon class="mail" name="at-outline"></ion-icon>slawomirjak@o2.pl</div>
+            
+        </div>
+        <div class="footer2">
+            <p class="copyrights">Copyright © Tartak Celestyny</p>
+         </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
+
+<----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+@import url(reset.css);
+
+#map {
+    height: 400px; 
+    width: 100%;  
+
+   }
+   #map2 {
+    height: 400px; 
+    width: 100%;  
+
+   }
+   body{
+       min-height: 100%;
+   }
+   html { 
+    background: url(las.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    object-fit: cover;
+  }
+html {
+    font-family: 'Tahoma', serif;
+}
+
+h1 {
+    font-size: 3.7rem;
+    padding: 3.5rem;
+    margin: 4rem;
+    background-color: #262626;
+    border-radius: 20px;
+}
+
+h2,
+h3 {
+    font-size: 2.7rem;
+    background-color: #3B4347;
+    color: #fff;
+    display: inline-block;
+    padding: 2rem;
+    margin: 2rem;
+    border-top-left-radius: 20px;
+}
+
+div {
+    width: 100%;
+}
+
+div.maindiv {
+    height: 300px;
+    text-align: center;
+    background-color: #262626;
+    font-size: 200px;
+    color: #fff;
+
+}
+div.footer1{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+}
+div.footer2{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 25px;
+    width: 100%;
+    background-color: #222021;
+    text-align: center;
+    color: blanchedalmond;
+}
+img.foto1{
+    width: 100%;
+    bottom: 5%;
+    color: white;
+    opacity: 0.3;
+    height: 70px;
+    z-index: 100;
+    object-fit: cover;
+}
+footer{
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    color: azure;
+    background-color: #222021;
+}
+
+.footertext1{
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    font-size: 17px;
+    color: #C79E52;
+}
+.footertext2{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    font-size: 17px;
+    color: #C79E52;
+}
+.footertext3{
+    position: absolute;
+    top: 40%;
+    left: 11%;
+    font-size: 25px;
+    color: #C79E52;
+}
+.footertext4{
+    position: absolute;
+    top:40%;
+    left: 76%;
+    font-size: 17px;
+    color: #C79E52;
+}
+.mail{
+    position: absolute;
+    left: -20px;
+    color: #C79E52;
+}
+.phone{
+    position: absolute;
+    left: -20px;
+    color: #C79E52;
+}
+.loc{
+    position: absolute;
+    left: -20px;
+    color: #C79E52;
+}
+.ion4{
+    position: absolute;
+    top: -3px;
+    left: -40px;
+    width: 2rem;
+    height: 2rem;
+    color: #C79E52;
+}
+
+.copyrights{
+    position: relative;
+    text-align: center;
+    bottom: -20%;
+    color: #C79E52;
+    font-size: 12px;
+    transition: 1s;
+    
+}
+.copyrights:hover {
+    color: white;
+}
+
+
+.spicer2
+{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 20px;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    background: wheat;
+    opacity: 0.3;
+    z-index: -99999991;
+}
+
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.single-portfolio {
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    width: 33%;
+    margin-left: 0.16%;
+    margin-right: 0.16%;
+    margin-bottom: 10px;
+    height: 350px;
+    float: left;
+ 
+    background-position: center;
+    -webkit-transition: 4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    overflow: hidden;
+}
+
+.single-portfolio:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #c79e52;
+    -webkit-transition: translateY(100%);
+    -moz-transition: translateY(100%);
+    -ms-transition: translateY(100%);
+    -o-transition: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 30px;
+    text-transform: uppercase;
+    content: attr(data-text);
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    margin-top: 10px;
+}
+
+.single-portfolio:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: translateY(93%);
+    -moz-transition: translateY(93%);
+    -ms-transition: translateY(93%);
+    -o-transition: translateY(93%);
+    transform: translateY(93%);
+    transition: .4s;
+    background-color: #262626;
+    opacity: 0.9;
+    color: #C79E52;
+    padding: 0 10px;
+    content: attr(data-title);
+    font-size: 23px;
+    text-align: center;
+}
+
+.single-portfolio:hover:after {
+    -webkit-transition: translateY(0);
+    -moz-transition: translateY(0);
+    -ms-transition: translateY(0);
+    -o-transition: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: .5s .2s;
+    -moz-transition: .5s .2s;
+    -ms-transition: .5s .2s;
+    -o-transition: .5s .2s;
+    transition: .5s .001s;
+    opacity: 0.84;
+}
+
+.single-portfolio:hover:before {
+    -webkit-transition: translateY(0);
+    -moz-transition: translateY(0);
+    -ms-transition: translateY(0);
+    -o-transition: translateY(0);
+    transform: translateY(0);
+    padding: 10px;
+    background-color: #262626;
+    opacity: 0.7;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.kontener {
+    width: 100%;
+    height: 90px;
+    background-color: #262626;
+    opacity: 0.85;
+    display: flex;
+    justify-content: center;
+
+}
+
+header {
+    background: rgb(22, 18, 18);
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    position: relative;
+        height: 0rem;
+        width: auto;
+        left: 10px;
+        top: 10px;
+    
+                                                                                        /* tu pozycjonowanie */
+    }
+
+nav {
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 33px;
+    position: relative;
+
+
+}
+
+nav a {
+    color: #C79E52;
+    text-transform: uppercase;
+    font-size: 22px;
+    z-index: 100;
+
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -10px;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.spicer
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #262626;
+    color: white;
+    opacity: 0.99;
+    float: left;
+    background:  url(logotry.png) no-repeat center center;
+    background-size: 400px auto;
+}
+.footertext3:hover
+{
+    color: white;
+    transition: 0.5s;
+}
+
+.footertext3::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -10px;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+
+.footertext3:hover::before {
+    width: 240px;
+}
